@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv -fn build/**/** docs && git add . && git commit -m fix && npm version patch ",
+    "build": "react-scripts build && cp -fnr build/**/** docs && git add . && git commit -m up-version && npm version patch && git push && git add . && git commit -m fix",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
