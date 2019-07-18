@@ -10,8 +10,6 @@ import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import IconFilterList from "@material-ui/icons/FilterList";
 
-console.log(icons);
-
 const useStyles = makeStyles(theme => ({
   chip: {
     margin: theme.spacing(0.5)
