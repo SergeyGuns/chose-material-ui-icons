@@ -90,7 +90,6 @@ export default () => {
           const Icon = icons[key];
           return (
             <Chip
-              size="large"
               className={classes.chip}
               key={key}
               icon={<Icon />}
@@ -113,6 +112,7 @@ export default () => {
           {["Normal", "Rounded", "Outline", "TwoTone", "Sharp"].map(
             iconType => (
               <FormControlLabel
+                key={iconType}
                 value={iconType}
                 control={<Radio />}
                 label={iconType}
@@ -133,6 +133,7 @@ export default () => {
         >
           {["import", "require"].map(typeModules => (
             <FormControlLabel
+              key={typeModules}
               value={typeModules}
               control={<Radio />}
               label={typeModules}
@@ -170,7 +171,6 @@ export default () => {
           const Label = <>{key}</>;
           return (
             <Chip
-              size="large"
               className={classes.chip}
               key={key}
               icon={<Icon />}
