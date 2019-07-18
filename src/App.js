@@ -5,6 +5,9 @@ import ChoseIconWidget from "./ChoseIconWidget";
 function App() {
   return (
     <div className="App">
+      <a href="https://material-ui.com/api/icon/">
+        https://material-ui.com/api/icon/
+      </a>
       <ChoseIconWidget />
     </div>
   );
