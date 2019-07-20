@@ -9,7 +9,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import IconFilterList from "@material-ui/icons/FilterList";
-
+import IconAddCircle from "@material-ui/icons/AddCircle";
 const useStyles = makeStyles(theme => ({
   chip: {
     margin: theme.spacing(0.5)
@@ -173,6 +173,8 @@ export default () => {
             <Chip
               className={classes.chip}
               key={key}
+              deleteIcon={<IconAddCircle color="secondary" />}
+              onDelete={handleIconsClick(key)}
               icon={<Icon />}
               label={Label}
               onClick={handleIconsClick(key)}
