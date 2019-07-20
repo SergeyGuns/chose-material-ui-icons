@@ -11,8 +11,8 @@
     "@material-ui/icons": "^4.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
+    "start": "react-scripts start",
     "deploy": "react-scripts build && rm -fr docs/* && cp -fnr build/* docs && git add . && git commit -m fix && npm version patch && git add . && git push",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
